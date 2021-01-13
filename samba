@@ -1,0 +1,34 @@
+Linux 搭建samba服务器步骤
+
+yum -y install samba
+systemctl start smb.service	#启动服务
+systemctl status smb.service	#自启
+
+
+创建samba用户
+注意 必须是本地有的账号才可以
+
+pdbedit -a l
+
+mkdir /home/database	#创建共享目录
+chown -Rf l:l /home/database	#改变目录拥有者
+
+改selinux
+
+getsebool -a | grep samba
+setsebool -P samba_home_dirs on
+
+编辑文件配置
+vim /etc/samba/smb.conf
+
+在最后加入以下配置文件
+[database]		#共享名称
+	comment = Do not arbitrariley modify the database file	#警告不可以随便修改数据库
+	path = /home/database	#共享目录
+	public = no	#关闭所有人可见
+	writable = yes	#允许写入操作
+
+
+最后重启samba服务
+
+systenctl start smb
