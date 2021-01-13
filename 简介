@@ -1,0 +1,28 @@
+Linux是当前流行的一种操作系统。
+因为它在操作以及结构上非常像UNIX操作系统，所以也被称为类的UNIX系统
+但是UNIX系统只能运行在指定的硬件平台，要学习掌握UNIX系统，就需要特定的硬件设备。
+而Linux系统实际上是UNIX系统的重写。
+而这一切的起源于芬兰人 Linus Torvalds。
+
+Linux系统的特点
+(1)开放的系统
+(2)多用户多任务的系统
+(3)具有出色稳定性和速度性能的系统
+(4)具有可靠安全性的系统
+(5)提供丰富网络功能的系统
+(6)具有标准兼容性和可移植性的系统
+(7)提供良好的用户界面的系统
+
+Linux系统的组成
+(1)Linux内核
+(2)Linux shell
+(3)Linux 文件系统
+(4)Linux应用程序
+
+Linux主要的发行版本
+(1)CentOS
+(2)Red Hat Linux
+(3)SuSE Linux
+(4)Debian Linux
+(5)Ubuntu
+(6)kail
